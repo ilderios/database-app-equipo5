@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\warehouse;
+use App\Models\Warehouse;
 use Illuminate\Http\Request;
 
 class WarehouseController extends Controller
@@ -34,7 +34,7 @@ class WarehouseController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(warehouse $warehouse)
+    public function show(Warehouse $warehouse)
     {
         //
     }
@@ -42,7 +42,7 @@ class WarehouseController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(warehouse $warehouse)
+    public function edit(Warehouse $warehouse)
     {
         //
     }
@@ -50,7 +50,7 @@ class WarehouseController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, warehouse $warehouse)
+    public function update(Request $request, Warehouse $warehouse)
     {
         //
     }
@@ -58,7 +58,7 @@ class WarehouseController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(warehouse $warehouse)
+    public function destroy(Warehouse $warehouse)
     {
         //
     }

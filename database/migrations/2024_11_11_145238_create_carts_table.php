@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Carts', function (Blueprint $table) {
-            $table->id(); // unsignedBigInteger por defecto
-            $table->unsignedBigInteger('Product_id');
-            $table->integer('quantity');
+        Schema::create('carts', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
-
-            // Relación con la tabla products
-            $table->foreign('Product_id')->references('id')->on('Products')->onDelete('cascade');
         });
     }
 
