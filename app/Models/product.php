@@ -11,9 +11,9 @@ class Product extends Model
     use HasFactory;
 
     // Relación con inventarios
-    public function Inventories()
+    public function Inventory()
     {
-        return $this->hasMany(Inventorie::class, 'Product_id');
+        return $this->hasMany(Inventory::class, 'Product_id');
     }
 
     // Relación con carritos

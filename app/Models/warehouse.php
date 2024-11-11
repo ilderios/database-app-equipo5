@@ -11,8 +11,8 @@ class Warehouse extends Model
     use HasFactory;
 
     // Definimos la relación con inventarios
-    public function inventories()
+    public function Inventory()
     {
-        return $this->hasMany(Inventorie::class, 'Warehouse_id');
+        return $this->hasMany(Inventory::class, 'Warehouse_id');
     }
 }
