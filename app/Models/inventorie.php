@@ -5,20 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class inventorie extends Model
+class Inventorie extends Model
 {
     /** @use HasFactory<\Database\Factories\InventorieFactory> */
     use HasFactory;
 
-    // Relación con warehouse
-    public function warehouse()
+    // Relación con Warehouse
+    public function Warehouse()
     {
-        return $this->belongsTo(warehouse::class, 'warehouse_id');
+        return $this->belongsTo(Warehouse::class, 'Warehouse_id');
     }
 
     // Relación con producto
-    public function product()
+    public function Product()
     {
-        return $this->belongsTo(product::class, 'product_id');
+        return $this->belongsTo(Product::class, 'Product_id');
     }
 }

@@ -5,20 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class product extends Model
+class Product extends Model
 {
     /** @use HasFactory<\Database\Factories\ProductFactory> */
     use HasFactory;
 
     // Relación con inventarios
-    public function inventories()
+    public function Inventories()
     {
-        return $this->hasMany(inventorie::class, 'product_id');
+        return $this->hasMany(Inventorie::class, 'Product_id');
     }
 
     // Relación con carritos
-    public function carts()
+    public function Carts()
     {
-        return $this->hasMany(cart::class, 'product_id');
+        return $this->hasMany(Cart::class, 'Product_id');
     }
 }
